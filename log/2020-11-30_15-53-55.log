@@ -1,0 +1,93 @@
+2020-11-30 15:54:02 - configuration_utils.py[line:281] - INFO: loading configuration file ./pretrained_model/chinese_roberta_wwm_ext\config.json
+2020-11-30 15:54:02 - configuration_utils.py[line:319] - INFO: Model config BertConfig {
+  "_num_labels": 2,
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bad_words_ids": null,
+  "bos_token_id": 0,
+  "decoder_start_token_id": null,
+  "directionality": "bidi",
+  "do_sample": false,
+  "early_stopping": false,
+  "eos_token_id": 2,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_eps": 1e-12,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "max_position_embeddings": 512,
+  "min_length": 0,
+  "model_type": "bert",
+  "no_repeat_ngram_size": 0,
+  "num_attention_heads": 12,
+  "num_beams": 1,
+  "num_hidden_layers": 12,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": 1,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "prefix": null,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "task_specific_params": null,
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 21128
+}
+
+2020-11-30 15:54:02 - modeling_utils.py[line:505] - INFO: loading weights file ./pretrained_model/chinese_roberta_wwm_ext\pytorch_model.bin
+2020-11-30 15:54:20 - train.py[line:91] - INFO: epoch 0, step 20, loss 5.1699, recall 0.5965, precise 0.0201, f1 0.0389
+2020-11-30 15:54:34 - train.py[line:91] - INFO: epoch 0, step 40, loss 5.1664, recall 0.4182, precise 0.0137, f1 0.0265
+2020-11-30 15:54:47 - train.py[line:91] - INFO: epoch 0, step 60, loss 5.1751, recall 0.5345, precise 0.0187, f1 0.0362
+2020-11-30 15:55:01 - train.py[line:91] - INFO: epoch 0, step 80, loss 5.1894, recall 0.4746, precise 0.0172, f1 0.0331
+2020-11-30 15:55:14 - train.py[line:91] - INFO: epoch 0, step 100, loss 5.1732, recall 0.4464, precise 0.0150, f1 0.0291
+2020-11-30 15:55:27 - train.py[line:91] - INFO: epoch 0, step 120, loss 5.1944, recall 0.3167, precise 0.0119, f1 0.0230
+2020-11-30 15:55:41 - train.py[line:91] - INFO: epoch 0, step 140, loss 5.1606, recall 0.5000, precise 0.0173, f1 0.0334
+2020-11-30 15:55:54 - train.py[line:91] - INFO: epoch 0, step 160, loss 5.1722, recall 0.5172, precise 0.0185, f1 0.0358
+2020-11-30 15:56:08 - train.py[line:91] - INFO: epoch 0, step 180, loss 5.1535, recall 0.5091, precise 0.0176, f1 0.0341
+2020-11-30 15:56:21 - train.py[line:91] - INFO: epoch 0, step 200, loss 5.1561, recall 0.5091, precise 0.0179, f1 0.0346
+2020-11-30 15:56:35 - train.py[line:91] - INFO: epoch 0, step 220, loss 5.1591, recall 0.5357, precise 0.0190, f1 0.0367
+2020-11-30 15:56:48 - train.py[line:113] - INFO: -----eval----
+2020-11-30 15:56:48 - train.py[line:114] - INFO: epoch 0, step 230, loss 5.1640, recall 0.5337, precise 0.0196, f1 0.0378
+2020-11-30 15:56:48 - train.py[line:115] - INFO: -----eval----
+2020-11-30 15:56:57 - train.py[line:91] - INFO: epoch 1, step 240, loss 5.1620, recall 0.4643, precise 0.0162, f1 0.0314
+2020-11-30 15:57:10 - train.py[line:91] - INFO: epoch 1, step 260, loss 5.1661, recall 0.5088, precise 0.0189, f1 0.0365
+2020-11-30 15:57:24 - train.py[line:91] - INFO: epoch 1, step 280, loss 5.1411, recall 0.6481, precise 0.0226, f1 0.0437
+2020-11-30 15:57:37 - train.py[line:91] - INFO: epoch 1, step 300, loss 5.2079, recall 0.4531, precise 0.0189, f1 0.0362
+2020-11-30 15:57:51 - train.py[line:91] - INFO: epoch 1, step 320, loss 5.1594, recall 0.4643, precise 0.0173, f1 0.0333
+2020-11-30 15:58:04 - train.py[line:91] - INFO: epoch 1, step 340, loss 5.1622, recall 0.4464, precise 0.0165, f1 0.0319
+2020-11-30 15:58:18 - train.py[line:91] - INFO: epoch 1, step 360, loss 5.1509, recall 0.5185, precise 0.0186, f1 0.0360
+2020-11-30 15:58:31 - train.py[line:91] - INFO: epoch 1, step 380, loss 5.1695, recall 0.3158, precise 0.0123, f1 0.0237
+2020-11-30 15:58:45 - train.py[line:91] - INFO: epoch 1, step 400, loss 5.1490, recall 0.7018, precise 0.0268, f1 0.0516
+2020-11-30 15:58:58 - train.py[line:91] - INFO: epoch 1, step 420, loss 5.1562, recall 0.4909, precise 0.0182, f1 0.0352
+2020-11-30 15:59:11 - train.py[line:91] - INFO: epoch 1, step 440, loss 5.1377, recall 0.5370, precise 0.0195, f1 0.0377
+2020-11-30 15:59:25 - train.py[line:91] - INFO: epoch 1, step 460, loss 5.1719, recall 0.6207, precise 0.0265, f1 0.0509
+2020-11-30 15:59:31 - train.py[line:113] - INFO: -----eval----
+2020-11-30 15:59:31 - train.py[line:114] - INFO: epoch 1, step 460, loss 5.1719, recall 0.5629, precise 0.0221, f1 0.0425
+2020-11-30 15:59:31 - train.py[line:115] - INFO: -----eval----
